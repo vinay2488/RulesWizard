@@ -1,0 +1,9 @@
+package rules;
+
+import rules.Message;
+rule "DroolsT"
+    when
+        Message( status == 1 )
+    then
+        System.out.println( "Hi" );
+end
